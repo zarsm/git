@@ -4,94 +4,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cas pratique</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <div class="bg-danger">
-    <nav class="navbar navbar-expand container navbar-danger">
-        <span class="navbar-brand fd-1">
-            ❤️
-        </span>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a  class="nav-link" href="index.html">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a  class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a  class="nav-link" href="">Services</a>
-            </li>
-        </ul>
-    </nav>
-   </div>
-   <div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://source.unsplash.com/random" class="d-block w-100" alt="...">
+    <div class="bg-dark">
+        <nav class="navbar navbar-expand container navbar-dark ">
+            <span class="navbar-brand fs-1">
+                🐻‍❄️
+            </span>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <!--
+                => git add index.html 
+                => git commit -m "création de la barre de menu avec bootstrap"
+            -->
+        </nav>
+        <!-- git add index.html 
+            git commit -m "finalisation diaporama"
+        -->
     </div>
-    <div class="carousel-item">
-      <img src="https://source.unsplash.com/random" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://source.unsplash.com/random" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <section class="container my-4">
+        <h1 class="text-center mb-3">Bienvenu sur mon site</h1>
+        <div id="diaporama" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <figure class="carousel-item active">
+                    <img src="https://source.unsplash.com/random/1400x200" alt="" class="rounded img-fluid">
+                </figure>        
+                <figure class="carousel-item">
+                    <img src="https://source.unsplash.com/random/1400x201" alt="" class="rounded img-fluid">
+                </figure>
+                <figure class="carousel-item">
+                    <img src="https://source.unsplash.com/random/1400x202" alt="" class="rounded img-fluid">
+                </figure>
+                <figure class="carousel-item">
+                    <img src="https://source.unsplash.com/random/1400x203" alt="" class="rounded img-fluid">
+                </figure>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#diaporama" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon text-danger" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#diaporama" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
 
-  <form>
-    <div class="mb-3">
-
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-        <label for="message">message</label>
-        <textarea id="message"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-
-  <section class="container py-5">
-    <div class="row">
-  <div class="card  mx-auto" style="width: 200px;">
-   
-
-    <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-  <div class="card mx-auto"style="width: 200px;">
-    <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-  <div class="card mx-auto" style="width: 200px;">
-    <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
+    <div class="bg-dark py-5">
+    <section class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class=" text-white">nous contacter</h2>
+                <form>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        <label for="email">votre email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea id="message" placeholder="votre message" class="form-control" style="height:200px"></textarea><!-- gitk -->
+                        <label for="message">votre message</label>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-outline-success w-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-fire text-white" viewBox="0 0 16 16">
+                                <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+                              </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <h2 class="text-white">nos locaux</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991440608113!2d2.2922926147384883!3d48.858373608663406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1674740573995!5m2!1sfr!2sfr" class="w-100" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
 </div>
-</section>
+    <section class="container py-5 ">
+        <div class="row">
+            <article class="col">
+                <div class="card">
+                    <h3 class="card-header">Lorem, ipsum dolor.</h3>
+                    <img src="https://source.unsplash.com/random/400x200" alt="">
+                    <div class="card-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, omnis!
+                    </div>
+                </div>
+            </article>
+            <article class="col">
+                <div class="card">
+                    <h3 class="card-header">Lorem, ipsum dolor.</h3>
+                    <img src="https://source.unsplash.com/random/400x201" alt="">
+                    <div class="card-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, omnis!
+                    </div>
+                </div>
+            </article>
+            <article class="col">
+                <div class="card">
+                    <h3 class="card-header">Lorem, ipsum dolor.</h3>
+                    <img src="https://source.unsplash.com/random/400x202" alt="">
+                    <div class="card-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, omnis!
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- 
+        git add index.html 
+        git commit -m "ajouter diaporama"
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    </script>
 </body>
 </html>
